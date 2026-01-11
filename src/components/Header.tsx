@@ -17,11 +17,17 @@ import {
 } from 'react-icons/fa';
 
 import Calculator from '../assets/icons/calculator.png'
+import Calculator1 from '../assets/icons/calculator (1).png'
 import Calendar from '../assets/icons/calendar.png'
 import Search from '../assets/icons/document-text.png'
 import Marketplace from '../assets/icons/shop.png'
 import Wallet from '../assets/icons/wallet-2.png'
 import Logo from '../assets/icons/Group.png'
+import AlignBotton from '../assets/icons/align-bottom.png'
+import TrendUp from '../assets/icons/trend-up.png'
+import Setting from '../assets/icons/setting-4.png'
+
+
 const Header = () => {
   const [showBudgetModal, setShowBudgetModal] = useState(false);
   const [showCalendarModal, setShowCalendarModal] = useState(false);
@@ -161,51 +167,57 @@ const Header = () => {
           />
 
           <div className="relative z-10 w-full max-w-109.5 overflow-hidden rounded-2xl bg-white shadow-2xl">
-            <div className="relative h-56 bg-[#0f2747] flex items-center justify-center overflow-hidden">
-              <div className="absolute inset-0 bg-linear-to-b from-white/10 via-transparent to-[#0b1f3d] opacity-60" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#1c3f74_0%,transparent_35%),radial-gradient(circle_at_80%_10%,#11284f_0%,transparent_25%)] opacity-60" />
-              <div className="relative w-20 h-20 rounded-2xl border-4 border-white/70 flex items-center justify-center text-white shadow-lg shadow-black/30">
-                <FaCalculator className="w-10 h-10" />
+           <div className='px-6 pt-6 bg-[#0C2841]'>
+            <div className="relative h-64 bg-[#0c1c30] flex items-center justify-center overflow-hidden">
+              <div className="absolute inset-0 bg-linear-to-b from-white/5 via-transparent to-black/60" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_18%,rgba(255,255,255,0.08)_0%,transparent_32%),radial-gradient(circle_at_78%_18%,rgba(255,255,255,0.05)_0%,transparent_28%)]" />
+              <div className="relative flex items-center justify-center text-white shadow-xl shadow-black/40">
+                <img
+                  src={Calculator1}
+                  className="w-20 h-20 object-contain filter invert brightness-0 drop-shadow-[0_6px_30px_rgba(0,0,0,0.35)]"
+                  alt="Calculator"
+                />
               </div>
+            </div>
             </div>
 
             <div className="px-7 py-7 space-y-6">
               <div className="space-y-4">
                 <div className="flex gap-3">
                   <div className="mt-1 text-gray-700">
-                    <FaSlidersH className="w-5 h-5" />
+                    <img src={Setting} className="text-2xl" alt="Align Botton" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 leading-snug">
+                    <h3 className=" text-[16px] font-semibold text-gray-900 leading-snug">
                       Set up annual budgets by account category
                     </h3>
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-xs text-gray-600 mt-1">
                       Allocate funds across income and expense lines with full visibility.
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="mt-1 text-gray-700">
-                    <FaStopwatch className="w-5 h-5" />
+                    <img src={TrendUp} className="text-2xl" alt="Align Botton" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 leading-snug">
+                    <h3 className=" text-[16px] font-semibold text-gray-900 leading-snug">
                       Track actuals vs budget in real time
                     </h3>
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-xs text-gray-600 mt-1">
                       See how your community is performing against plan, month by month.
                     </p>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <div className="mt-1 text-gray-700">
-                    <FaPencilAlt className="w-5 h-5" />
+                    <img src={AlignBotton} className="text-2xl" alt="Align Botton" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 leading-snug">
+                    <h3 className=" text-[16px] font-semibold text-gray-900 leading-snug">
                       Adjust figures and forecast with ease
                     </h3>
-                    <p className="text-sm text-gray-600 mt-1">
+                    <p className="text-xs text-gray-600 mt-1">
                       Edit amounts, apply percentage changes, or roll forward last year's data—all in one place.
                     </p>
                   </div>
@@ -221,14 +233,14 @@ const Header = () => {
               </button>
             </div>
 
-            <button
+            {/* <button
               type="button"
               aria-label="Close budgeting modal"
               className="absolute right-4 top-4 text-white/80 hover:text-white"
               onClick={() => setShowBudgetModal(false)}
             >
               ✕
-            </button>
+            </button> */}
           </div>
         </div>
       )}
