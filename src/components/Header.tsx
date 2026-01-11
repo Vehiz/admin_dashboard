@@ -182,7 +182,7 @@ const Header = () => {
             </div>
 
             <div className="px-7 py-7 space-y-6">
-              <div className="space-y-4">
+              <div className="space-y-4 px-6">
                 <div className="flex gap-3">
                   <div className="mt-1 text-gray-700">
                     <img src={Setting} className="text-2xl" alt="Align Botton" />
