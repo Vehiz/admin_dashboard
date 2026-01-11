@@ -90,15 +90,21 @@ const Header = () => {
               </div>
             );
           })}
-          <div className="relative">
+          <div className="relative group">
             <button
               type="button"
-              className="w-10 h-10 bg-white rounded-full flex items-center justify-center cursor-pointer hover:opacity-80"
+              className="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer hover:opacity-80"
               aria-label="Open profile menu"
               onClick={() => setShowProfileMenu((prev) => !prev)}
             >
-              <span className="text-[#1e5f4a] font-semibold text-lg">D</span>
+              <span className="text-[#1e5f4a] font-semibold text-[20px]">D</span>
             </button>
+            <div className="pointer-events-none absolute right-0 top-full mt-2 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity">
+              <div className="rounded-xl bg-white shadow-lg border border-gray-100 px-4 py-3 text-left min-w-44">
+                <div className="text-lg font-semibold text-gray-900">Dylan Frank</div>
+                <div className="text-xs text-gray-500">dylanfran96@gmail.com</div>
+              </div>
+            </div>
             {showProfileMenu && <ProfileMenu onClose={() => setShowProfileMenu(false)} />}
           </div>
         </div>

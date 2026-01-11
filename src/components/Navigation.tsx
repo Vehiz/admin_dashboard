@@ -1,7 +1,9 @@
-import { FiCheckSquare } from 'react-icons/fi';
 import { PiScroll, PiArticleThin, PiToolboxLight } from "react-icons/pi";
 import { CiUser } from "react-icons/ci";
 import { MdHomeFilled } from "react-icons/md";
+import { GoTasklist } from "react-icons/go";
+
+
 
 const Navigation = () => {
   const navItems = [
@@ -10,7 +12,7 @@ const Navigation = () => {
     { icon: CiUser, label: 'Users', active: false },
     { icon: PiArticleThin, label: 'Request', active: false },
     { icon: PiScroll, label: 'Applications', active: false },
-    { icon: FiCheckSquare, label: 'Tasks', active: false },
+    { icon: GoTasklist, label: 'Tasks', active: false },
   ];
 
   return (
