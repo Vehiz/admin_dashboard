@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dbeafe"/>
+      <stop offset="1" stop-color="#e5e7eb"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#0f172a" stop-opacity="0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#sky)"/>
+
+  <!-- Distant shapes -->
+  <rect x="0" y="520" width="1200" height="280" fill="#cbd5e1"/>
+  <rect x="60" y="390" width="260" height="410" fill="#94a3b8"/>
+  <rect x="330" y="430" width="180" height="370" fill="#a3b3c7"/>
+  <rect x="540" y="360" width="300" height="440" fill="#8aa0b9"/>
+  <rect x="860" y="410" width="280" height="390" fill="#9fb3c8"/>
+
+  <!-- Main building -->
+  <g>
+    <polygon points="180,800 420,800 520,260 280,260" fill="#1f2937"/>
+    <polygon points="280,260 520,260 620,800 420,800" fill="#111827"/>
+    <polygon points="220,285 490,285 585,800 315,800" fill="url(#glass)"/>
+
+    <!-- Accent panels -->
+    <rect x="250" y="320" width="40" height="420" fill="#f59e0b" fill-opacity="0.85"/>
+    <rect x="305" y="335" width="22" height="390" fill="#60a5fa" fill-opacity="0.75"/>
+
+    <!-- Window grid -->
+    <g fill="#e5e7eb" fill-opacity="0.22">
+      <rect x="345" y="340" width="34" height="28"/>
+      <rect x="395" y="340" width="34" height="28"/>
+      <rect x="445" y="340" width="34" height="28"/>
+      <rect x="345" y="382" width="34" height="28"/>
+      <rect x="395" y="382" width="34" height="28"/>
+      <rect x="445" y="382" width="34" height="28"/>
+      <rect x="345" y="424" width="34" height="28"/>
+      <rect x="395" y="424" width="34" height="28"/>
+      <rect x="445" y="424" width="34" height="28"/>
+      <rect x="345" y="466" width="34" height="28"/>
+      <rect x="395" y="466" width="34" height="28"/>
+      <rect x="445" y="466" width="34" height="28"/>
+      <rect x="345" y="508" width="34" height="28"/>
+      <rect x="395" y="508" width="34" height="28"/>
+      <rect x="445" y="508" width="34" height="28"/>
+      <rect x="345" y="550" width="34" height="28"/>
+      <rect x="395" y="550" width="34" height="28"/>
+      <rect x="445" y="550" width="34" height="28"/>
+      <rect x="345" y="592" width="34" height="28"/>
+      <rect x="395" y="592" width="34" height="28"/>
+      <rect x="445" y="592" width="34" height="28"/>
+      <rect x="345" y="634" width="34" height="28"/>
+      <rect x="395" y="634" width="34" height="28"/>
+      <rect x="445" y="634" width="34" height="28"/>
+    </g>
+  </g>
+</svg>
