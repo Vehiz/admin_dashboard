@@ -67,7 +67,7 @@ const CalendarModal = ({ onClose }: CalendarModalProps) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex justify-end items-start md:items-center px-2 md:px-6">
+    <div className="fixed inset-0 z-50 flex justify-end items-start md:items-center px-0 md:px-0">
       <div className="absolute inset-0 bg-black/60" aria-hidden="true" onClick={onClose} />
 
       <div className="relative z-10 w-full max-w-95 h-180 bg-[#111] text-white rounded-lg shadow-2xl overflow-hidden mt-4 md:mt-0">
