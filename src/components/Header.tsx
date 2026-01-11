@@ -16,34 +16,41 @@ const Header = () => {
   const [showCalendarModal, setShowCalendarModal] = useState(false);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
 
+  const baseAction = 'rounded-lg flex items-center justify-center transition-colors';
+  const hoverSoft = 'hover:bg-white/10';
+  const sizes = {
+    large: 'w-12 h-12',
+    small: 'w-9 h-9',
+  };
+  const budgetVariant = 'text-white border border-white/15 bg-white/10 hover:bg-white/15';
+
   const headerActions = [
     {
       icon: Calculator,
       label: 'Budgeting',
-      className:
-        'w-12 h-12 text-white rounded-lg border border-white/15 bg-white/10 flex items-center justify-center hover:bg-white/15 transition-colors',
+      className: `${sizes.large} ${baseAction} ${budgetVariant}`,
       onClick: () => setShowBudgetModal(true),
     },
     {
       icon: Calendar,
       label: 'Calendar',
-      className: 'w-12 h-12 rounded-lg hover:bg-white/10 flex items-center justify-center transition-colors',
+      className: `${sizes.large} ${baseAction} ${hoverSoft}`,
       onClick: () => setShowCalendarModal(true),
     },
     {
       icon: Search,
       label: 'Search Activity',
-      className: 'w-12 h-12 rounded-lg hover:bg-white/10 flex items-center justify-center transition-colors',
+      className: `${sizes.large} ${baseAction} ${hoverSoft}`,
     },
     {
       icon: Marketplace,
       label: 'Payout Center',
-      className: 'w-9 h-9 rounded-lg hover:bg-white/10 flex items-center justify-center transition-colors',
+      className: `${sizes.small} ${baseAction} ${hoverSoft}`,
     },
     {
       icon: Wallet,
       label: 'Marketplace',
-      className: 'w-9 h-9 rounded-lg hover:bg-white/10 flex items-center justify-center transition-colors',
+      className: `${sizes.small} ${baseAction} ${hoverSoft}`,
     },
   ];
 
