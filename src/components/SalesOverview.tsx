@@ -111,7 +111,7 @@ const SalesOverview = () => {
               <FaChevronRight className="w-3 h-3" />
             </button>
 
-            <div className="h-[180px] w-full border-r border-gray-200 pr-2">
+            <div className="h-45 w-full border-r border-gray-200 pr-2">
               <ResponsiveContainer width="100%" height="100%">
                 <BarChart data={chartData} margin={{ top: 10, right: 10, left: 0, bottom: 0 }}>
                   <CartesianGrid stroke="#e5e7eb" vertical={false} />

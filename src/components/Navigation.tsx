@@ -1,11 +1,4 @@
-import {
-  FiHome,
-  FiBriefcase,
-  FiUser,
-  FiFileText,
-  FiClipboard,
-  FiCheckSquare,
-} from 'react-icons/fi';
+import { FiCheckSquare } from 'react-icons/fi';
 import { PiScroll, PiArticleThin, PiToolboxLight } from "react-icons/pi";
 import { CiUser } from "react-icons/ci";
 import { MdHomeFilled } from "react-icons/md";
@@ -21,8 +14,8 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className=" bg-white border-b border-gray-100 border-t border-[#1e5f4a]">
-      <div className="mx-auto max-w-[1440px] w-full px-10">
+    <nav className=" bg-white border-b border-[#1e5f4a]">
+      <div className="mx-auto max-w-360 w-full px-10">
         <div className="flex items-center justify-between py-4">
           {navItems.map((item, index) => {
             const Icon = item.icon;

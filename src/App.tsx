@@ -15,8 +15,8 @@ function App() {
       <Header />
       <Navigation />
       
-      <div className="max-w-[1440px] mx-auto px-10">
-        <div className="py-[12px]">
+      <div className="max-w-360 mx-auto px-10">
+        <div className="py-3">
           <h1 className="text-[22px] font-bold text-gray-900">Welcome, Ahmed</h1>
         </div>
 

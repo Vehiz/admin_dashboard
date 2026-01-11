@@ -1,4 +1,3 @@
-import { FaComments } from 'react-icons/fa';
 import MetricItem from '../assets/Metric item.png';
 import img from '../assets/img.png';
 import img2 from '../assets/img (1).png';
@@ -32,7 +31,7 @@ const FeaturedListings = () => {
   return (
     <div className="grid grid-cols-3 gap-6 pb-6">
       {listings.map((listing, index) => (
-        <div key={index} className="relative rounded-2xl overflow-hidden min-h-[280px] bg-gray-200">
+        <div key={index} className="relative rounded-2xl overflow-hidden min-h-70 bg-gray-200">
           <img
             src={listing.image}
             alt={listing.title}
@@ -40,18 +39,7 @@ const FeaturedListings = () => {
           />
 
           {/* Bottom gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent" />
-
-          {/* Chat bubble on right card */}
-          {/* {listing.showChat && (
-            <button
-              type="button"
-              aria-label="Chat"
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-black/70 flex items-center justify-center"
-            >
-              <FaComments className="w-4 h-4 text-white" />
-            </button>
-          )} */}
+          <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/25 to-transparent" />
 
           {/* Text overlay */}
           <div className="absolute left-6 bottom-6 text-white space-y-2">
